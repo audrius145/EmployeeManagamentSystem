@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" userData="Edit Group Chat" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.EditGroupChatController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="74.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <Label text="Group Chat:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="id" text="10">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label text="(ID)">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <TextField fx:id="nameTF" prefWidth="387.0" promptText="Name" />
+            <Button mnemonicParsing="false" onAction="#changeName" text="Change Name" />
+         </children>
+      </HBox>
+      <Label text="Members" />
+      <HBox alignment="CENTER" prefHeight="152.0" prefWidth="700.0" spacing="10.0">
+         <children>
+            <TableView fx:id="membersTV" prefHeight="100.0" prefWidth="361.0">
+              <columns>
+                <TableColumn fx:id="idColumn" prefWidth="68.0" text="ID" />
+                <TableColumn fx:id="nameColumn" prefWidth="290.0" text="Name" />
+              </columns>
+            </TableView>
+            <Button fx:id="removeEmployee" mnemonicParsing="false" onAction="#removeEmployee" text="Remove Employee" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="76.0" prefWidth="700.0" spacing="10.0">
+         <children>
+            <ChoiceBox fx:id="choseEmployee" prefHeight="25.0" prefWidth="380.0" />
+            <Button fx:id="addEmployee" mnemonicParsing="false" onAction="#addEmployee" text="Add Employee" />
+         </children>
+      </HBox>
+      <Button mnemonicParsing="false" onAction="#Back" text="Back">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="50.0" />
+   </padding>
+</VBox>

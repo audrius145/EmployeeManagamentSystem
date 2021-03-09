@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" userData="Select Employee" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.EditEmployeeSelectController">
+   <right>
+      <VBox alignment="CENTER" prefHeight="387.0" prefWidth="117.0" spacing="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#addNew" prefWidth="64.0" text="New" />
+            <Button fx:id="edit" mnemonicParsing="false" onAction="#edit" prefWidth="64.0" text="Edit" />
+            <Button fx:id="archive" mnemonicParsing="false" onAction="#archive" prefHeight="25.0" prefWidth="64.0" text="Archive" />
+         </children>
+         <padding>
+            <Insets right="15.0" />
+         </padding>
+      </VBox>
+   </right>
+   <left>
+      <VBox alignment="CENTER" prefWidth="102.0" spacing="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#Back" prefWidth="80.0" text="Back">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <TableView fx:id="employeeTV" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="39.0" text="ID" />
+          <TableColumn fx:id="nameCol" prefWidth="156.0" text="Name" />
+            <TableColumn fx:id="departmentCol" prefWidth="208.0" text="Department" />
+            <TableColumn fx:id="adminCol" minWidth="7.0" prefWidth="76.0" text="Admin" />
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="70.0" prefWidth="620.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label textFill="RED">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="40.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <top>
+      <HBox alignment="CENTER" prefHeight="39.0" prefWidth="620.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Logged in as:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="user" text="user">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

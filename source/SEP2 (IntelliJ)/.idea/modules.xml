@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Assignment1/Assignment1.iml" filepath="$PROJECT_DIR$/Assignment1/Assignment1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignment2/Assignment2.iml" filepath="$PROJECT_DIR$/Assignment2/Assignment2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SEP2.iml" filepath="$PROJECT_DIR$/SEP2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client-v0.1/client-v0.1.iml" filepath="$PROJECT_DIR$/client-v0.1/client-v0.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client-v0.2/client-v0.2.iml" filepath="$PROJECT_DIR$/client-v0.2/client-v0.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client-v1.0/client-v1.0.iml" filepath="$PROJECT_DIR$/client-v1.0/client-v1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-v0.1/server-v0.1.iml" filepath="$PROJECT_DIR$/server-v0.1/server-v0.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-v0.2/server-v0.2.iml" filepath="$PROJECT_DIR$/server-v0.2/server-v0.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-v0.3/server-v0.3.iml" filepath="$PROJECT_DIR$/server-v0.3/server-v0.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-v0.4/server-v0.4.iml" filepath="$PROJECT_DIR$/server-v0.4/server-v0.4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-v1.0/server-v1.0.iml" filepath="$PROJECT_DIR$/server-v1.0/server-v1.0.iml" />
+    </modules>
+  </component>
+</project>
